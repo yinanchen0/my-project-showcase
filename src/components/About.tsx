@@ -25,21 +25,32 @@ const About = () => {
               className="w-[28rem] h-[32rem] object-cover rounded-lg border border-border lg:-ml-5"
             />
           </div>
-
         </div>
 
         {/* Skills Section */}
         <div className="mt-24 pt-16 border-t border-border">
           <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-8">Skills & Technologies</p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "Python", "C/C++/C#", "MATLAB", "JavaScript",
-              "Arduino", "Raspberry Pi", "ESP32", "PCB Design",
-              "KiCAD", "Altium", "SolidWorks", "AutoCAD",
-              "Machine Learning", "Signal Processing", "Embedded Systems", "IoT"
+              "Python",
+              "C/C++",
+              "MATLAB",
+              "JavaScript",
+              "SystemVerilog",
+              "SQL",
+              "HTML/CSS",
+              "C#",
+              "PCB Design",
+              "3D Modeling",
+              "Signal Processing",
+              "IoT",
+              "Machine Learning",
+              "Hardware debugging",
+              "Embedded Systems",
+              "soldering",
             ].map((skill) => (
-              <div 
+              <div
                 key={skill}
                 className="px-4 py-3 bg-secondary/50 rounded-lg text-center text-foreground text-sm font-medium hover:bg-secondary transition-colors"
               >
