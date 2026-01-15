@@ -26,24 +26,26 @@ const About = () => {
             />
           </div>
 
-          {/* Stats Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 pt-16 border-t border-border">
-            <div className="text-center">
-              <p className="font-display text-4xl md:text-5xl font-normal text-foreground">10+</p>
-              <p className="text-muted-foreground text-sm mt-2">Projects Completed</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-4xl md:text-5xl font-normal text-foreground">12+</p>
-              <p className="text-muted-foreground text-sm mt-2">Technologies Used</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-4xl md:text-5xl font-normal text-foreground">2</p>
-              <p className="text-muted-foreground text-sm mt-2">Thesis Papers</p>
-            </div>
-            <div className="text-center">
-              <p className="font-display text-4xl md:text-5xl font-normal text-foreground">∞</p>
-              <p className="text-muted-foreground text-sm mt-2">Curiosity</p>
-            </div>
+        </div>
+
+        {/* Skills Section */}
+        <div className="mt-24 pt-16 border-t border-border">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-sm mb-8">Skills & Technologies</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              "Python", "C/C++", "MATLAB", "JavaScript",
+              "Arduino", "Raspberry Pi", "ESP32", "PCB Design",
+              "KiCAD", "Altium", "SolidWorks", "AutoCAD",
+              "Machine Learning", "Signal Processing", "Embedded Systems", "IoT"
+            ].map((skill) => (
+              <div 
+                key={skill}
+                className="px-4 py-3 bg-secondary/50 rounded-lg text-center text-foreground text-sm font-medium hover:bg-secondary transition-colors"
+              >
+                {skill}
+              </div>
+            ))}
           </div>
         </div>
       </div>
