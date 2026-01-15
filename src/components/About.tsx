@@ -16,13 +16,14 @@ const About = () => {
           </div>
 
           {/* Photo */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-start">
             <img 
               src={profileImage} 
               alt="Profile photo" 
-              className="w-80 h-96 object-cover rounded-lg border border-border lg:mr-10"
+              className="w-96 h-[28rem] object-cover rounded-lg border border-border lg:-ml-10"
             />
           </div>
+
 
 
         {/* Stats Row */}
