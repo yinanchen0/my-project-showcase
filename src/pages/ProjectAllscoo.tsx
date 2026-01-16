@@ -112,11 +112,12 @@ const ProjectAllscoo = () => {
             </div>
           </div>
           
-          <div className="max-w-xl mx-auto">
+          <div>
+            <h3 className="font-display text-2xl text-foreground mb-6">Footrest</h3>
             <img 
               src="/images/allscoo-motor.jpg" 
-              alt="Motor Adjustment System" 
-              className="rounded-lg shadow-md w-full"
+              alt="Footrest Design" 
+              className="w-full rounded-lg shadow-md"
             />
           </div>
         </div>
