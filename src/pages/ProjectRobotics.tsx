@@ -1,4 +1,4 @@
-import { ArrowLeft, Download } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import roboticsArmImage from "@/assets/projects/robotics-arm.jpg";
 
@@ -43,6 +43,25 @@ const ProjectRobotics = () => {
               alt="3-DOF Robotic Arm"
               className="w-full h-auto"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Video */}
+      <section className="px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl font-normal text-foreground mb-8">
+            Pick and Place Demo
+          </h2>
+          <div className="bg-card rounded-lg border border-border overflow-hidden">
+            <video
+              src="/videos/robotics-demo.mp4"
+              controls
+              className="w-full h-auto"
+              poster={roboticsArmImage}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
@@ -166,24 +185,25 @@ const ProjectRobotics = () => {
         </div>
       </section>
 
-      {/* Download Report */}
+      {/* Source Code */}
       <section className="px-6 pb-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-2xl font-normal text-foreground mb-8">
-            Full Report
+            Source Code
           </h2>
           <div className="bg-card rounded-lg border border-border p-6">
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The complete technical report includes detailed derivations, MATLAB code for forward kinematics, 
-              inverse kinematics, and trajectory planning, as well as experimental results and analysis.
+              For detailed code implementation including MATLAB scripts for forward kinematics, 
+              inverse kinematics, and trajectory planning, check out the GitHub repository.
             </p>
             <a
-              href="/robotics-report.pdf"
-              download
+              href="https://github.com/yinanchen0/robotic-arm-kinematics-trajectory-planning"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
-              <Download className="w-4 h-4" />
-              Download Full Report (PDF)
+              <ExternalLink className="w-4 h-4" />
+              View on GitHub
             </a>
           </div>
         </div>
