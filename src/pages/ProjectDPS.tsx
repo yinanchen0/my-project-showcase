@@ -1,6 +1,10 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import dpsPcbImage from "@/assets/projects/dps-pcb.jpg";
+import dpsSchematic from "@/assets/projects/dps-schematic.png";
+import dpsEfficiency from "@/assets/projects/dps-efficiency.png";
+import dpsVoltageCurrent from "@/assets/projects/dps-voltage-current.png";
+import dpsInputOutput from "@/assets/projects/dps-input-output.png";
 
 const ProjectDPS = () => {
   return (
@@ -99,6 +103,54 @@ const ProjectDPS = () => {
         </div>
       </section>
 
+      {/* Schematic Diagram */}
+      <section className="px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl font-normal text-foreground mb-8">
+            Schematic Diagram
+          </h2>
+          <div className="bg-card rounded-lg border border-border overflow-hidden">
+            <img
+              src={dpsSchematic}
+              alt="DPS Schematic Diagram"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Performance Graphs */}
+      <section className="px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl font-normal text-foreground mb-8">
+            Performance Analysis
+          </h2>
+          <div className="space-y-8">
+            <div className="bg-card rounded-lg border border-border overflow-hidden">
+              <img
+                src={dpsEfficiency}
+                alt="Efficiency vs Load"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="bg-card rounded-lg border border-border overflow-hidden">
+              <img
+                src={dpsVoltageCurrent}
+                alt="Voltage and Current Output vs Load"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="bg-card rounded-lg border border-border overflow-hidden">
+              <img
+                src={dpsInputOutput}
+                alt="Voltage Output vs Input"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Design Details */}
       <section className="px-6 pb-24">
         <div className="max-w-4xl mx-auto">
@@ -112,7 +164,7 @@ const ProjectDPS = () => {
               suitable for powering microcontrollers, sensors, and other electronic components.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              The PCB was designed using KiCad and fabricated using photolithography etching process. 
+              The PCB was designed using DipTrace and fabricated using photolithography etching process. 
               Surface-mount components were used where possible to minimize board size while maintaining 
               good thermal characteristics.
             </p>
