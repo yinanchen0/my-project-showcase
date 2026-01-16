@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import dpsPcbImage from "@/assets/projects/dps-pcb.jpg";
 import roboticsArmImage from "@/assets/projects/robotics-arm.jpg";
 import virtualKeyboardImage from "@/assets/projects/virtual-keyboard-device.jpg";
+import emgCircuitImage from "@/assets/projects/emg-circuit.jpg";
 
 interface Project {
   category: string;
@@ -34,9 +35,11 @@ const projects: Project[] = [
     link: "/projects/robotics",
   },
   {
-    category: "Product Design",
-    title: "Mobile App Concept",
-    description: "UX/UI design for a wellness tracking application.",
+    category: "Biomedical Electronics",
+    title: "EMG Signal Acquisition System",
+    description: "Complete electromyography circuit capturing muscle electrical activity with instrumentation amplifier, bandpass filter, and Arduino output visualization.",
+    image: emgCircuitImage,
+    link: "/projects/emg",
   },
   {
     category: "Web Development",
