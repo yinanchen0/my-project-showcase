@@ -112,16 +112,11 @@ const ProjectAllscoo = () => {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <img 
-              src="/images/allscoo-foldable.jpg" 
-              alt="Foldable Mechanism" 
-              className="rounded-lg shadow-md"
-            />
+          <div className="max-w-xl mx-auto">
             <img 
               src="/images/allscoo-motor.jpg" 
               alt="Motor Adjustment System" 
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md w-full"
             />
           </div>
         </div>
