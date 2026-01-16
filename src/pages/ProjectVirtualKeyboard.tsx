@@ -121,6 +121,27 @@ const ProjectVirtualKeyboard = () => {
         </div>
       </section>
 
+      {/* PCB Evolution */}
+      <section className="px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-display text-2xl font-normal text-foreground mb-8">
+            PCB Development Journey
+          </h2>
+          <div className="bg-card rounded-lg border border-border overflow-hidden">
+            <img
+              src="/images/vk-pcb-evolution.png"
+              alt="PCB layout evolution from solid to flexible PCB across 15+ versions"
+              className="w-full h-auto bg-white p-4"
+            />
+          </div>
+          <p className="text-muted-foreground mt-4 leading-relaxed">
+            Over 15 PCB iterations were developed throughout the project, evolving from traditional rigid 
+            boards to flexible PCB designs. The progression shows optimization for wearability, from early 
+            ring-mounted prototypes to the final palm-worn flexible sensor arrays.
+          </p>
+        </div>
+      </section>
+
       {/* Palm Device Image */}
       <section className="px-6 pb-16">
         <div className="max-w-4xl mx-auto">
