@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import dpsPcbImage from "@/assets/projects/dps-pcb.jpg";
+import roboticsArmImage from "@/assets/projects/robotics-arm.jpg";
 
 interface Project {
   category: string;
@@ -23,9 +24,11 @@ const projects: Project[] = [
     link: "/projects/dps",
   },
   {
-    category: "Data Science",
-    title: "Data Visualization Dashboard",
-    description: "Interactive dashboard for analyzing and presenting complex datasets.",
+    category: "Robotics",
+    title: "3-DOF Robotic Arm",
+    description: "A 3-degree-of-freedom robotic arm with forward/inverse kinematics and trajectory planning for pick and place operations.",
+    image: roboticsArmImage,
+    link: "/projects/robotics",
   },
   {
     category: "Product Design",
