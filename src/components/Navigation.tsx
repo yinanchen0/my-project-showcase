@@ -33,8 +33,15 @@ const Navigation = () => {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // If on another page, navigate home with hash
-      navigate(`/#${sectionId}`);
+      // If on another page, navigate home first, then scroll
+      navigate("/");
+      // Use setTimeout to wait for navigation, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
     }
     
     setIsMobileMenuOpen(false);
@@ -46,6 +53,9 @@ const Navigation = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       navigate("/");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
     }
   };
 
