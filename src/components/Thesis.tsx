@@ -95,11 +95,25 @@ const Thesis = () => {
                   {/* Embedded PDF Preview */}
                   {expandedPdf === thesis.pdfFilename && (
                     <div className="mb-6 rounded-lg overflow-hidden border border-border bg-muted">
-                      <iframe
-                        src={getPdfUrl(thesis.pdfFilename)}
+                      <object
+                        data={getPdfUrl(thesis.pdfFilename)}
+                        type="application/pdf"
                         className="w-full h-[500px] md:h-[600px]"
-                        title={`Preview of ${thesis.title}`}
-                      />
+                      >
+                        <div className="flex flex-col items-center justify-center h-full p-8 text-center">
+                          <p className="text-muted-foreground mb-4">
+                            PDF preview not available in this browser.
+                          </p>
+                          <a
+                            href={getPdfUrl(thesis.pdfFilename)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-foreground text-background rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
+                          >
+                            Open PDF in New Tab
+                          </a>
+                        </div>
+                      </object>
                     </div>
                   )}
                   
